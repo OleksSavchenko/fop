@@ -38,7 +38,7 @@
     <h2>НАШІ ПОСЛУГИ</h2>
     <div class="services-list">
       <div class="service-item" *ngFor="let service of services">
-        <img [src]="'assets/' + service.image" [alt]="service.title" />
+        <img [src]="'./assets/' + service.image" [alt]="service.title" />
         <div class="service-title">{{ service.title }}</div>
       </div>
     </div>
