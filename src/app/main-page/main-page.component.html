@@ -15,7 +15,7 @@
         </p>
       </div>
     </div>
-    <div class="stability-trust">
+    <div class="fop-info">
       <div class="info-section">
         <h2>Савченко Роман Олександрович</h2>
         <ul>
@@ -34,4 +34,22 @@
       </div>
     </div>
   </div>
+  <div class="services-container">
+    <h2>НАШІ ПОСЛУГИ</h2>
+    <div class="services-list">
+      <div class="service-item" *ngFor="let service of services">
+        <img [src]="'/assets/' + service.image" [alt]="service.title" />
+        <div class="service-title">{{ service.title }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="why-choose-container">
+    <h2>Чому варто обрати нас:</h2>
+    <div class="why-choose-list">
+      <div class="why-choose-item" *ngFor="let reason of reasons">
+        <span class="checkbox"></span>
+        <p>{{ reason }}</p>
+      </div>
+    </div>
+  </div>  
 </div>

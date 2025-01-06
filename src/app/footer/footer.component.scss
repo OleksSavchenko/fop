@@ -1,0 +1,46 @@
+@import '../util/_variables.scss';
+
+.footer-container {
+  background-color: $background-color;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-item strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.footer-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
